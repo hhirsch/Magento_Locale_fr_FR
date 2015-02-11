@@ -4,7 +4,7 @@
  * @package   German_LocalePack
  * @authors   MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
  * @developer MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
- * @version   0.1.0
+ * @version   0.1.1
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 class German_LocalePackFr_Block_System_Config_Form_Fieldset_Extensions
@@ -15,9 +15,10 @@ class German_LocalePackFr_Block_System_Config_Form_Fieldset_Extensions
         $helper = Mage::helper("localepackfr");
 
         $html  = $this->_getHeaderHtml($element);
-		$html .= "<li>".$helper->__("The installed language pack only provides translations of in Magento existing texts. If you want to prepare your Magento store on the legal requirements in France or expand common payment methods, we recommend to install the following additional extensions.")."</p>";
+		$html .= "<p>".$helper->__("The installed language pack only provides translations of in Magento existing texts. If you want to prepare your Magento store on the legal requirements in %s or expand common payment methods, we recommend to install the following additional extensions.",
+				$helper->__("France"))."</p>";
 		$html .= "<hr style='margin-top:15px; margin-bottom:5px;' />";
-		$html .= "<h3 style='margin-top:20px; margin-bottom:10xp;'>".$helper->__("Specific market adjustment for French and European stores")."</h3>";
+		$html .= "<h3 style='margin-top:20px; margin-bottom:10xp;'>".$helper->__("Specific market adjustment for")." ".$helper->__("French and European stores")."</h3>";
 		$html .= "<dl>";
 		$html .= "<dt><b>FireGento: Mage Setup</b> - <a href='http://www.magentocommerce.com/magento-connect/catalog/product/view/id/20763/' target='_blank'>Mage Setup</a> ".$helper->__("on")." Magento Connect</dt>";
 		$html .= "<dd>".$helper->__("Extension Key for the")." Connect Manager: <span style='color:#EA7601; font-style:italic;'>http://connect20.magentocommerce.com/community/FireGento_MageSetup</span></dd>";
