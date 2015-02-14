@@ -6,16 +6,15 @@
 "store url=\"customer/account/\"":"Customer Account Url",
 "htmlescape var=$customer.name":"Customer Name",
 "var customer.email":"Customer Email",
-"store url=\"customer/account/confirm/\" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url":"Confirmation Url",
-"htmlescape var=$customer.password":"Customer password"}
+"store url=\"customer/account/confirm/\" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url":"Confirmation Url"}
 @-->
 
 <!--@styles
 body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
 @-->
 
-<body style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
-<div style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
+<body style="background-color:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
+<div style="background-color:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
 <table cellspacing="0" cellpadding="0" border="0" height="100%" width="100%">
         <tr>
             <td align="center" valign="top" style="padding:20px 0 20px 0">
@@ -32,10 +31,6 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
                             <h1 style="font-size:22px; font-weight:normal; line-height:22px; margin:0 0 11px 0;">{{block type="cms/block" block_id="email_template_say_hello"}} {{htmlescape var=$customer.name}},</h1>
                             <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Votre e-mail {{var customer.email}} doit être confirmé avant de l'utiliser pour vous connecter à notre magasin.</p>
                             <p style="font-size:12px; line-height:16px; margin:0 0 8px 0;">Pour confirmer l'e-mail et vous connecter instantanément, veuillez utiliser <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}" style="color:#1E7EC8;">ce lien de confirmation</a>. Ce lien n'est valide qu'une seule fois.</p>
-                            <p style="border:1px solid #E0E0E0; font-size:12px; line-height:16px; margin:0 0 16px 0; padding:13px 18px; background:#f9f9f9;">
-                                Utilisez les valeurs suivantes lorsque vous êtes invité(e) à vous connecter:<br/>
-                                <strong>E-mail:</strong> {{var customer.email}}<br/>
-                                <strong>Mot de passe:</strong> {{htmlescape var=$customer.password}}<p>
                             <p style="font-size:12px; line-height:16px; margin:0;">
                             	{{block type="cms/block" block_id="email_template_contact"}}
                             </p>
