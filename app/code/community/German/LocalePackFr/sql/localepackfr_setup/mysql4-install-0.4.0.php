@@ -13,8 +13,8 @@ $installer->startSetup();
 
 $blockContent = <<<EOD
 Si vous avez des questions, n'hésitez pas à nous contacter à l'adresse
-{{depend store_email}}par email <a href="mailto:{{var store_email}}">{{var store_email}}</a>,{{/depend}}
-{{depend store_phone}}par téléphone au <a href="tel:{{var phone}}">{{var store_phone}}</a>,{{/depend}}
+par email <a href="mailto:{{var store_email}}">{{var store_email}}</a>,
+par téléphone au <a href="tel:{{var phone}}">{{var store_phone}}</a>,
 via <a title="Mon service-site sur Skype" href="skype:my.shop?chat" target="_blank">Skype Chat</a> (Nom d'utilisateur: my.shop)
 ou sur notre Facebook <a title="Mon Fanpage dans Facebook" href="http://www.facebook.com/my.shop" target="_blank">Mon Fanpage</a>.
 EOD;
