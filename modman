@@ -12,12 +12,12 @@ downloader/template_fr_1.7  downloader/template_fr_1.7
 #Misc
 js/german/localepackfr/setup.js     js/german/localepackfr/setup.js
 
-
 #TinyMCE
 js/tiny_mce/langs/fr.js                                 js/tiny_mce/langs/fr.js
 js/tiny_mce/plugins/advhr/langs/fr_dlg.js               js/tiny_mce/plugins/advhr/langs/fr_dlg.js
 js/tiny_mce/plugins/advimage/langs/fr_dlg.js            js/tiny_mce/plugins/advimage/langs/fr_dlg.js
 js/tiny_mce/plugins/advlink/langs/fr_dlg.js             js/tiny_mce/plugins/advlink/langs/fr_dlg.js
+js/tiny_mce/plugins/autosave/langs/fr.js                js/tiny_mce/plugins/autosave/langs/fr.js
 js/tiny_mce/plugins/emotions/langs/fr_dlg.js            js/tiny_mce/plugins/emotions/langs/fr_dlg.js
 js/tiny_mce/plugins/fullpage/langs/fr_dlg.js            js/tiny_mce/plugins/fullpage/langs/fr_dlg.js
 js/tiny_mce/plugins/media/langs/fr_dlg.js               js/tiny_mce/plugins/media/langs/fr_dlg.js
@@ -39,9 +39,14 @@ app/locale/es_ES/German_LocaleFr.csv app/locale/es_ES/German_LocaleFr.csv
 app/locale/fr_FR/German_LocaleFr.csv app/locale/fr_FR/German_LocaleFr.csv
 app/locale/pt_PT/German_LocaleFr.csv app/locale/pt_PT/German_LocaleFr.csv
 
+
 #Adminhtml und Default Theme
 app/design/adminhtml/default/default/locale/fr_FR/translate.csv     app/design/adminhtml/default/default/locale/fr_FR/translate.csv
+app/design/frontend/default/blank/locale/fr_FR/translate.csv        app/design/frontend/default/blank/locale/fr_FR/translate.csv
 app/design/frontend/default/default/locale/fr_FR/translate.csv      app/design/frontend/default/default/locale/fr_FR/translate.csv
+app/design/frontend/default/iphone/locale/fr_FR/translate.csv       app/design/frontend/default/iphone/locale/fr_FR/translate.csv
+app/design/frontend/default/modern/locale/fr_FR/translate.csv       app/design/frontend/default/modern/locale/fr_FR/translate.csv
+app/design/frontend/rwd/default/locale/fr_FR/translate.csv          app/design/frontend/rwd/default/locale/fr_FR/translate.csv
 
 #CoreTranslation
 app/locale/fr_FR/Mage_Adminhtml.csv app/locale/fr_FR/Mage_Adminhtml.csv
@@ -60,6 +65,7 @@ app/locale/fr_FR/Mage_Centinel.csv app/locale/fr_FR/Mage_Centinel.csv
 app/locale/fr_FR/Mage_Checkout.csv app/locale/fr_FR/Mage_Checkout.csv
 app/locale/fr_FR/Mage_Cms.csv app/locale/fr_FR/Mage_Cms.csv
 app/locale/fr_FR/Mage_Compiler.csv app/locale/fr_FR/Mage_Compiler.csv
+app/locale/fr_FR/Mage_ConfigurableSwatches.csv app/locale/fr_FR/Mage_ConfigurableSwatches.csv
 app/locale/fr_FR/Mage_Connect.csv app/locale/fr_FR/Mage_Connect.csv
 app/locale/fr_FR/Mage_Contacts.csv app/locale/fr_FR/Mage_Contacts.csv
 app/locale/fr_FR/Mage_Core.csv app/locale/fr_FR/Mage_Core.csv
@@ -116,6 +122,7 @@ app/locale/fr_FR/template/email/account_new.html app/locale/fr_FR/template/email
 app/locale/fr_FR/template/email/account_password_reset_confirmation.html app/locale/fr_FR/template/email/account_password_reset_confirmation.html 
 app/locale/fr_FR/template/email/admin_password_new.html app/locale/fr_FR/template/email/admin_password_new.html 
 app/locale/fr_FR/template/email/admin_password_reset_confirmation.html app/locale/fr_FR/template/email/admin_password_reset_confirmation.html 
+app/locale/fr_FR/template/email/amazonpayments_asp_notification_error.html app/locale/fr_FR/template/email/amazonpayments_asp_notification_error.html 
 app/locale/fr_FR/template/email/contact_form.html app/locale/fr_FR/template/email/contact_form.html 
 app/locale/fr_FR/template/email/currency_update_warning.html app/locale/fr_FR/template/email/currency_update_warning.html 
 app/locale/fr_FR/template/email/log_clean_warning.html app/locale/fr_FR/template/email/log_clean_warning.html 
@@ -132,6 +139,11 @@ app/locale/fr_FR/template/email/product_stock_alert.html app/locale/fr_FR/templa
 app/locale/fr_FR/template/email/sitemap_generate_warning.html app/locale/fr_FR/template/email/sitemap_generate_warning.html 
 app/locale/fr_FR/template/email/token.html app/locale/fr_FR/template/email/token.html 
 app/locale/fr_FR/template/email/wishlist_share.html app/locale/fr_FR/template/email/wishlist_share.html
+
+#Email subtemplates
+app/locale/fr_FR/template/email/html/call_us.html app/locale/fr_FR/template/email/html/call_us.html
+app/locale/fr_FR/template/email/html/footer.html app/locale/fr_FR/template/email/html/footer.html
+app/locale/fr_FR/template/email/html/header.html app/locale/fr_FR/template/email/html/header.html
 
 #Email Sales Templates
 app/locale/fr_FR/template/email/sales/creditmemo_new_guest.html app/locale/fr_FR/template/email/sales/creditmemo_new_guest.html 

@@ -6,14 +6,14 @@
       <version_ids>2</version_ids>
    </version_ids>
    <summary>German Community Modules - French (France) Language Pack</summary>
-   <description>Französisches Sprachpaket für Magento Commerce
+   <description>Pack en langue française pour Magento Commerce
 
 French language pack for Magento Commerce
 
-Pack en langue française pour Magento Commerce</description>
+Französisches Sprachpaket für Magento Commerce</description>
    <license>OSL</license>
    <license_uri>http://opensource.org/licenses/osl-3.0.php</license_uri>
-   <version>0.4.2</version>
+   <version>0.5.0</version>
    <stability>stable</stability>
    <notes>La traducción aún no está completa, y se actualiza constantemente
 
@@ -74,6 +74,7 @@ Die Übersetzung ist noch nicht vollständig und wird laufend ergänzt</notes>
          <target>magedesign</target>
          <target>magecommunity</target>
          <target>mageetc</target>
+         <target>mage</target>
          <target>mage</target>
          <target>mage</target>
          <target>mage</target>
@@ -179,6 +180,7 @@ Die Übersetzung ist noch nicht vollständig und wird laufend ergänzt</notes>
          <path>js/tiny_mce/plugins/advhr/langs/fr_dlg.js</path>
          <path>js/tiny_mce/plugins/advimage/langs/fr_dlg.js</path>
          <path>js/tiny_mce/plugins/advlink/langs/fr_dlg.js</path>
+         <path>js/tiny_mce/plugins/autosave/langs/fr.js</path>
          <path>js/tiny_mce/plugins/emotions/langs/fr_dlg.js</path>
          <path>js/tiny_mce/plugins/fullpage/langs/fr_dlg.js</path>
          <path>js/tiny_mce/plugins/media/langs/fr_dlg.js</path>
@@ -208,6 +210,7 @@ Die Übersetzung ist noch nicht vollständig und wird laufend ergänzt</notes>
          <path>fr_FR/Mage_Checkout.csv</path>
          <path>fr_FR/Mage_Cms.csv</path>
          <path>fr_FR/Mage_Compiler.csv</path>
+         <path>fr_FR/Mage_ConfigurableSwatches.csv</path>
          <path>fr_FR/Mage_Connect.csv</path>
          <path>fr_FR/Mage_Contacts.csv</path>
          <path>fr_FR/Mage_Core.csv</path>
@@ -255,7 +258,6 @@ Die Übersetzung ist noch nicht vollständig und wird laufend ergänzt</notes>
          <path>fr_FR/Mage_Widget.csv</path>
          <path>fr_FR/Mage_Wishlist.csv</path>
          <path>fr_FR/Mage_XmlConnect.csv</path>
-         <path>fr_FR/Phoenix_Moneybookers.csv</path>
          <path>fr_FR/template</path>
          <path>fr_FR/German_LocaleFr.csv</path>
          <path>de_DE/German_LocaleFr.csv</path>
@@ -272,6 +274,7 @@ Die Übersetzung ist noch nicht vollständig und wird laufend ergänzt</notes>
          <type>file</type>
          <type>dir</type>
          <type>dir</type>
+         <type>file</type>
          <type>file</type>
          <type>file</type>
          <type>file</type>
@@ -458,9 +461,11 @@ Die Übersetzung ist noch nicht vollständig und wird laufend ergänzt</notes>
          <include/>
          <include/>
          <include/>
+         <include/>
       </include>
       <ignore>
          <ignore/>
+         <ignore>#^.DS_Store#</ignore>
          <ignore>#^.DS_Store#</ignore>
          <ignore>#^.DS_Store#</ignore>
          <ignore>#^.DS_Store#</ignore>
