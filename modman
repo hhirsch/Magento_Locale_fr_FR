@@ -1,6 +1,6 @@
 #BackendModule
+app/code/community/German/LocalePackFr                        app/code/community/German/LocalePackFr
 app/etc/modules/German_LocalePackFr.xml                       app/etc/modules/German_LocalePackFr.xml
-app/design/adminhtml/default/default/layout/localepackfr.xml  app/design/adminhtml/default/default/layout/localepackfr.xml
 app/design/adminhtml/default/default/layout/localepackfr.xml  app/design/adminhtml/default/default/layout/localepackfr.xml
 
 

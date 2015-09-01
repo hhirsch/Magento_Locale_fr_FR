@@ -1,4 +1,4 @@
-<!--@subject {{var store.getFrontendName()}}: Invoice # {{var i<h3>Votre facture <span class="no-link">#{{var invoice.increment_id}}</span></h3>}} for Order # {{var order.increment_id}} @-->
+<!--@subject {{var store.getFrontendName()}}: Invoice # {{var invoice.increment_id}} for Order # {{var order.increment_id}} @-->
 <!--@vars
 {"store url=\"\"":"Store Url",
 "var logo_url":"Email Logo Image Url",
@@ -6,7 +6,7 @@
 "htmlescape var=$order.getCustomerName()":"Customer Name",
 "var store.getFrontendName()":"Store Name",
 "store url=\"customer/account/\"":"Customer Account Url",
-"var i<h3>Votre facture <span class="no-link">#{{var invoice.increment_id}}</span></h3>":"Invoice Id",
+"var invoice.increment_id":"Invoice Id",
 "var order.increment_id":"Order Id",
 "var order.getBillingAddress().format('html')":"Billing Address",
 "var payment_html":"Payment Details",
@@ -41,7 +41,7 @@
     </tr>
     <tr>
         <td class="order-details">
-            <h3>Your Invoice <span class="no-link">#{{var i<h3>Votre facture <span class="no-link">#{{var invoice.increment_id}}</span></h3>}}</span></h3>
+            <h3>Votre facture <span class="no-link">#{{var invoice.increment_id}}</span></h3>
             <p>pour la commande <span class="no-link">#{{var order.increment_id}}</span></p>
         </td>
     </tr>
