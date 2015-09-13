@@ -1,19 +1,13 @@
 " The customer does not exist in the system anymore.","Le client n'existe plus dans le système.",
-" You will need to navigate to your "," You will need to navigate to your ","+"
 " [deleted]","[supprimé]",
 " and "," et ",
-" and go to the "," and go to the ","+"
-" note that the URLs provided below are the correct values for your current website): "," note that the URLs provided below are the correct values for your current website): ","+"
-" sections for your Hosted Checkout Pages."," sections for your Hosted Checkout Pages.","+"
 "%s (Default Template from Locale)","%s (Modèle par Défaut de la Configuration Locale)",
 "%s cache type(s) disabled.","Type(s) de cache %s désactivé(s)",
 "%s cache type(s) enabled.","Type(s) de cache %s activé(s)",
 "%s cache type(s) refreshed.","Type(s) de cache %s rafraîchi(s).",
-"(Absolute path or Relative to Magento install root, ex. var/export)","(Absolute path or Relative to Magento install root, ex. var/export)","+"
 "(For Type ""Local Server"" need to use relative path to Magento install var/export or var/import, e.g. var/export, var/import, var/export/some/dir, var/import/some/dir)","(pour le type ""Serveur local"", nécessaire d'utiliser le chemin relatif vers l'installation de Magento  var/export ou var/import, e.g. var/export, var/import, var/export/some/dir, var/import/some/dir)",
 "(For US 2-letter state names)","(Pour noms d'Etats US à 2 lettres)",
 "(If left empty will be auto-generated)","(si laissé vide, sera généré automatiquement)",
-"(Includes more countries than those listed below. As the application owner, you are responsible for complying with country-specific laws related to the distribution or sale of your application into that country, including your home country.)","(Includes more countries than those listed below. As the application owner, you are responsible for complying with country-specific laws related to the distribution or sale of your application into that country, including your home country.)","+"
 "(Leave empty for first spreadsheet)","(Laisser vide pour premier tableur)",
 "(Products will be added/updated to this store if 'store' column is blank or missing in the import file.)","(Les produits seront ajoutés/actualisés à cette boutique si la colonne ""boutique"" est vide ou fait défaut dans le fichier d'importation.)",
 "(Shift-)Click or drag to change value","Cliquez + SHIFT ou faites glisser pour modifier la valeur",
@@ -26,6 +20,7 @@
 "- Click on any of the time parts to increase it","- Cliquez sur n'importe quelle partie de l'heure pour l'augmenter",
 "- Hold mouse button on any of the above buttons for faster selection.","- Maintenez le bouton de la souris enfoncé sur n'importe lequel des boutons ci-dessus pour accélérer la sélection.",
 "- Use the %s buttons to select month","- Utilisez les boutons %s pour sélectionner le mois",
+"- Use the %s, %s buttons to select month","- Utilisez les boutons %s, %s pour sélectionner le mois",
 "- Use the %s, %s buttons to select year","- Utilisez les boutons %s, %s pour sélectionner l'année",
 "- or Shift-click to decrease it","- ou Cliquez + SHIFT pour la diminuer",
 "- or click and drag for faster selection.","- ou cliquez et faites glisser pour accélérer la sélection.",
@@ -36,23 +31,17 @@
 "-- Please select --","-- Veuillez sélectionner --",
 "--Please Select--","--Veuillez sélectionner--",
 "1 Hour","1 Heure",
-"1. set up","1. set up","+"
-"10:40 AM","10:40 AM","+"
 "12 Hours","12 Heures",
-"12h AM/PM","12h AM/PM","+"
+"12h AM/PM","12h AM/PM"
 "2 Hours","2 Heures",
-"2. customize","2. customize","+"
 "24 Hours","24 Heures",
-"24h","24h","+"
+"24h","24h"
 "2YTD","Jusqu'à ce jour",
 "6 Hours","6 Heures",
-"80px x 80px","80px x 80px",
-"80x80 px","80x80 px",
-"<h1 class=""page-heading"">404 Error</h1><p>Page not found.</p>","<h1 class=""page-heading"">404 Error</h1><p>Page not found.</p>","+"
-"<h1 class=""page-heading"">Access denied</h1><p>Access denied.</p>","<h1 class=""page-heading"">Access denied</h1><p>Access denied.</p>","+"
-"<strong>%s</strong> requests access to your account","<strong>%s</strong> requests access to your account","+"
-"<strong>Attention</strong>: Captcha is case sensitive.","<strong>Attention</strong>: Captcha is case sensitive.","+"
-"A new password was sent to your email address. Please check your email and click Back to Login.","A new password was sent to your email address. Please check your email and click Back to Login.","+"
+"<h1 class=""page-heading"">404 Error</h1><p>Page not found.</p>","<h1 class=""page-heading"">404 Error</h1><p>Page not found.</p>"
+"<h1 class=""page-heading"">Access denied</h1><p>Access denied.</p>","<h1 class=""page-heading"">Access denied</h1><p>Access denied.</p>"
+"<strong>%s</strong> requests access to your account","<strong>%s</strong> requests access to your account"
+"<strong>Attention</strong>: Captcha is case sensitive.","<strong>Attention</strong>: Captcha is case sensitive."
 "A user with the same user name or email aleady exists.","Un utilisateur avec le même nom d'utilisateur ou le même email existe déjà.",
 "A user with the same user name or email already exists.","Un utilisateur avec le même nom d'utilisateur ou le même email existe déjà.",
 "API Key","Clé API",
@@ -70,13 +59,11 @@
 "Account Information","Informations du compte",
 "Account Status","Statut Compte",
 "Account status","Statut du compte",
-"Action","Action","+"
+"Action","Action"
 "Actions","Action",
-"Actions XML","Actions XML","+"
-"Activate","Activate","+"
+"Actions XML","Actions XML"
 "Active","Actif",
 "Add","Ajouter",
-"Add Contents Path","Add Contents Path","+"
 "Add Exception","Ajouter Exception",
 "Add Field Mapping","Ajouter Mappage Champ",
 "Add Field with URL:","Ajouter Champ avec URL:",
@@ -88,40 +75,36 @@
 "Add New URL Rewrite","Ajouter Réécriture Nouvelle URL",
 "Add New User","Ajouter Nouvel Utilisateur",
 "Add New Variable","Ajouter Nouvelle Variable",
-"Add New osCommerce Profile","Add New osCommerce Profile","+"
-"Add PHP Extension dependency","Add PHP Extension dependency","+"
-"Add Package dependency","Add Package dependency","+"
 "Add Products","Ajouter produits",
 "Add URL Rewrite","Ajouter Réécriture URL",
 "Add URL Rewrite for a Category","Ajouter Réécriture URL pour une Catégorie",
 "Add URL Rewrite for a Product","Ajouter Réécriture URL pour un Produit",
 "Add after","Ajouter après",
-"Add to Cart","Add to Cart","+"
-"Add to Wishlist","Add to Wishlist","+"
+"Add to category","Ajouter à la catégorie"
 "Additional Cache Management","Gestion Cache Additionnel",
 "Address Type:","Type d'Adresse:",
-"Admin","Admin","+"
+"Admin","Admin"
 "Advanced Admin Section","Section Avancée Administrateur",
 "Advanced Profiles","Profils Avancés",
 "Advanced Section","Section Avancée",
 "After authorization application will have access to you account.","Après autorisation, l'application aura accès à votre compte.",
-"AirMail Template Preview","AirMail Template Preview","+"
 "All","Tous",
 "All Allowed Countries","Tous les Pays Possibles",
 "All Cache","Tout le Cache",
 "All Files","Tous les Fichiers",
 "All Reviews","Tous les avis",
 "All Store Views","Toutes les vues de la boutique",
+"All Storefronts","Toutes les vitrines"
 "All Tags","Tous les tags",
 "All Websites","Tous les sites web",
 "All countries","Tous les pays",
 "All fields","Tous les champs",
-"All locations","All locations","+"
 "All possible rates were fetched, please click on ""Save"" to apply","Tous les taux possibles ont été estimés, veuillez cliquer sur ""Enregistrer"" pour appliquer",
 "All rates were fetched, please click on ""Save"" to apply","Tous les taux ont été estimés, cliquez sur ""Enregistrer"" pour appliquer",
 "All valid rates have been saved.","Tous les taux valides ont été sauvegardés.",
+"Already in category","Dans une catégorie"
 "Always (during development)","Toujours (durant le développement)",
-"Amounts","Montants",
+"Amounts","Montants","==Hallo=="
 "An error has occured while syncronizing media storages.","Une erreur est survenue lors de la synchronisation.",
 "An error occurred while clearing the JavaScript/CSS cache.","Une erreur s'est produite lors de la suppression du cache JavaScript/CSS.",
 "An error occurred while clearing the configurable swatches image cache.","An error occurred while clearing the configurable swatches image cache.","+"
