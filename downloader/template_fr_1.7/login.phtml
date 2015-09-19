@@ -26,18 +26,18 @@
 ?>
 <?php echo $this->template('header.phtml') ?>
 <?php if ($returnUrl = $this->controller()->session()->getReturnUrl()): ?>
-<a class="f-right" href="<?php echo htmlentities($returnUrl) ?>">Return to Magento Administration</a>
+<a class="f-right" href="<?php echo htmlentities($returnUrl) ?>">Retour à l'administration Magento</a>
 <?php endif ?>
 <div style="width:300px; padding:20px; margin:90px auto !important; background:#f6f6f6;">
 <form method="post" action="#">
     <input name="form_key" type="hidden" value="<?php echo $this->getFormKey() ?>" />
-    <h2 class="page-head">Log In</h2>
-    <p><small>Please re-enter your Magento Adminstration Credentials.<br/>Only administrators with full permissions will be able to log in.</small></p>
+    <h2 class="page-head">Connectez-vous</h2>
+    <p><small>S'il vous plaît re-saisir vos identifiants de adminstration Magento.<br/>Seuls les administrateurs avec des autorisations complètes seront en mesure de se connecter.</small></p>
     <table class="form-list">
-        <tr><td class="label"><label for="username">Username:</label></td><td class="value"><input id="username" name="username" value=""/></td></tr>
-        <tr><td class="label"><label for="password">Password:</label></td><td class="value"><input type="password" id="password" name="password"/></td></tr>
+        <tr><td class="label"><label for="username">Nom d'utilisateur:</label></td><td class="value"><input id="username" name="username" value=""/></td></tr>
+        <tr><td class="label"><label for="password">Mot de passe:</label></td><td class="value"><input type="password" id="password" name="password"/></td></tr>
         <tr><td></td>
-            <td class="value"><button type="submit">Log In</button></td></tr>
+            <td class="value"><button type="submit">Connectez-vous</button></td></tr>
         </table>
 </form>
 </div>

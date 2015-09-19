@@ -27,12 +27,12 @@
 <?php echo $this->template('header.phtml') ?>
 <?php if ($this->get('writable_warning')) echo $this->template('writable.phtml');?>
 <div class="bar-head">
-    <h4>Settings</h4>
+    <h4>Paramètres</h4>
 </div>
 <ul class="bare-list">
     <li>
         <input type="checkbox" id="maintenance" value="1" checked="checked" /> &nbsp;
-        <label for="maintenance">Put store on the maintenance mode while installing/upgrading/backup creation</label>
+        <label for="maintenance">Mettez magasin sur le mode de maintenance lors de l'installation / mise à niveau de création / sauvegarde</label>
     </li>
     <li>
         <table cellpadding="0" cellspacing="0">
@@ -41,21 +41,21 @@
                     <input type="checkbox" id="is_backup" value="1"  /> &nbsp;
                 </td>
                 <td>
-                    <label for="is_backup">Create Backup</label>
+                    <label for="is_backup">Créer sauvegarde</label>
                 </td>
                 <td>
                     &nbsp;<select id="archive_type" style="width: 320px;">
-                        <option value="1">Database</option>
-                        <option value="4">Database and Media</option>
-                        <option value="2">System</option>
-                        <option value="3">System (excluding Media)</option>
+                        <option value="1">Base de données</option>
+                        <option value="4">Base de données et médias</option>
+                        <option value="2">Système</option>
+                        <option value="3">Système (hors médias)</option>
                     </select>
                 </td>
             </tr>
             <tr id="backup-name-container" style="display: none; margin-top: 5px;">
                 <td valign="top">
                     <div style="margin: 6px 0 0 5px;">
-                        <label for="backup_name">Backup Name</label>
+                        <label for="backup_name">Nom de la sauvegarde</label>
                     </div>
                 </td>
                 <td>
@@ -69,7 +69,7 @@
     </li>
 </ul>
 <div class="bar-head">
-    <h4>Install New Extensions</h4>
+    <h4>Installez les nouvelles extensions</h4>
 </div>
 <script type="text/javascript">
 <!--
@@ -109,7 +109,7 @@ function connectPrepare(form) {
               ' <ul class="msgs"> ' +
               '  <li>' +
               '   <ul class="error-msg">' +
-              '     <li>Connection Error try again later.</li>' +
+              '     <li>Erreur de connexion réessayer plus tard.</li>' +
               '   </ul>' +
               '  </li>' +
               ' </ul>' +
@@ -125,12 +125,12 @@ function connectPrepare(form) {
     <input name="form_key" type="hidden" value="<?php echo $this->getFormKey() ?>" />
     <ul class="bare-list">
         <li>
-            <span class="step-count">1</span> &nbsp; Search for modules via <a href="http://connect.magentocommerce.com/" target="Magento_Connect">Magento Connect</a>.
+            <span class="step-count">1</span> &nbsp; Recherche de modules via <a href="http://connect.magentocommerce.com/" target="Magento_Connect">Magento Connect</a>.
         </li>
         <li>
             <span class="step-count">2</span> &nbsp;
-            <label for="install_package_id">Paste extension key to install:</label> <input type="text" id="install_package_id" name="install_package_id" style="width:300px"/>
-            <button type="submit">Install</button>
+            <label for="install_package_id">Collez clé d'extension à installer:</label> <input type="text" id="install_package_id" name="install_package_id" style="width:300px"/>
+            <button type="submit">Installer</button>
         </li>
     </ul>
 </form>
@@ -141,24 +141,24 @@ function connectPrepare(form) {
 <br/>
 
 <div class="bar-head">
-    <h4>Direct package file upload</h4>
+    <h4>Forfait direct upload de fichier</h4>
 </div>
 <form action="<?php echo $this->url('connectInstallPackageUpload')?>" method="post" target="connect_iframe" onsubmit="onSubmit(this)" enctype="multipart/form-data">
     <input name="form_key" type="hidden" value="<?php echo $this->getFormKey() ?>" />
     <ul class="bare-list">
-        <li><span class="step-count">1</span> &nbsp; Download or build package file.</li>
+        <li><span class="step-count">1</span> &nbsp; Télécharger ou construire fichier de package.</li>
         <li>
-            <span class="step-count">2</span> &nbsp; Upload package file:
+            <span class="step-count">2</span> &nbsp; Fichier de package de chargement:
             <label for="file"></label>
             <input type="file" id="file" name="file"/>
-            <button type="submit">Upload</button>
+            <button type="submit">Télécharger</button>
         </li>
     </ul>
 </form>
 
 <br/><br/>
 <div class="bar-head">
-    <h4>Manage Existing Extensions</h4>
+    <h4>Gérer les extensions existantes</h4>
     <?php if (empty($_GET['updates'])): ?>
         <span class="bar-head-btn f-right"><button type="button" class="f-right" onclick="checkForUpdateClick()">Check for Upgrades</button></span>
     <?php endif; ?>
@@ -182,9 +182,9 @@ function connectPrepare(form) {
         <input type="hidden" id="ignore_local_modification" name="ignore_local_modification" value=""/>
         <input type="hidden" name="form_id" value="connect_packages_<?php echo $i ?>"/>
     </div>
-    <p class="nm"><button type="button" onclick="formSubmit('connect_packages_<?php echo $i ?>')" class="f-right">Commit Changes</button></p>
-    <h2 class="page-head">Channel: <?php echo $channelConfig->getChannelLabel($channel); ?></h2>
-    <p class="f-right"><label for="clean_sessions">Clear all sessions after successfull install or upgrade: <input type="checkbox" id="clean_sessions"/></label></p>
+    <p class="nm"><button type="button" onclick="formSubmit('connect_packages_<?php echo $i ?>')" class="f-right">Valider les modifications</button></p>
+    <h2 class="page-head">Canal: <?php echo $channelConfig->getChannelLabel($channel); ?></h2>
+    <p class="f-right"><label for="clean_sessions">Effacer tous les sessions après réussie installez ou mettez: <input type="checkbox" id="clean_sessions"/></label></p>
     <div class="clear"></div>
 
     <table cellspacing="0" cellpadding="0" width="100%">
@@ -202,11 +202,11 @@ function connectPrepare(form) {
         <?php endif; ?>
         <thead>
             <tr>
-                <th class="first">Package Name</th>
-                <th class="a-center">Installed</th>
-                <?php if (!empty($_GET['updates'])): ?><th class="a-center">Available</th><?php endif; ?>
+                <th class="first">Nom du package</th>
+                <th class="a-center">Installé</th>
+                <?php if (!empty($_GET['updates'])): ?><th class="a-center">Disponible</th><?php endif; ?>
                 <th>Actions</th>
-                <th class="last">Summary</th>
+                <th class="last">Résumé</th>
             </tr>
         </thead>
         <tbody>
@@ -232,11 +232,11 @@ function connectPrepare(form) {
     <div class="clear"></div>
 
     <div class="form-btn-set">
-        <button type="button" onclick="formSubmit('connect_packages_<?php echo $i ?>')" class="f-right">Commit Changes</button>
+        <button type="button" onclick="formSubmit('connect_packages_<?php echo $i ?>')" class="f-right">Valider les modifications</button>
         <?php if (!empty($_GET['updates'])): ?>
         <p class="f-left a-left">
-            <span style="background:#f6f6f6;padding:0 5px;">&nbsp;</span> &nbsp;Installed<br/>
-            <span style="background:#fcfbbb;padding:0 5px;">&nbsp;</span> &nbsp;Upgrade Available<br/>
+            <span style="background:#f6f6f6;padding:0 5px;">&nbsp;</span> &nbsp;Installé<br/>
+            <span style="background:#fcfbbb;padding:0 5px;">&nbsp;</span> &nbsp;Mise à jour disponible<br/>
         </p>
         <?php endif; ?>
     </div>
@@ -255,12 +255,12 @@ $$('#connect_packages_' + <?php echo $i?> + ' select').each(function(el){el.valu
 <div id="connect_iframe_success" style="display:none">
     <?php $this->set('messages', array('success'=>array('Procedure completed. Please check the output frame for useful information and refresh the page to see changes.'))) ?>
     <?php echo $this->template('messages.phtml') ?>
-    <button onclick="location.href='<?php echo $this->baseUrl() ?>'">Refresh</button>
+    <button onclick="location.href='<?php echo $this->baseUrl() ?>'">Actualiser</button>
 </div>
 <div id="connect_iframe_failure" style="display:none">
     <?php $this->set('messages', array('error'=>array('Please check the output frame for errors and refresh the page to retry changes.'))) ?>
     <?php echo $this->template('messages.phtml') ?>
-    <button onclick="location.href='<?php echo $this->baseUrl() ?>'">Refresh</button>
+    <button onclick="location.href='<?php echo $this->baseUrl() ?>'">Actualiser</button>
 </div>
 
 <?php echo $this->template('footer.phtml') ?>

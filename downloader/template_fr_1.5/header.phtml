@@ -45,25 +45,25 @@
     <div class="container">
 
         <div class="header-top">
-            <h1 id="logo">Magento Downloader</h1>
+            <h1 id="logo">Magento téléchargeur</h1>
         </div>
         <div class="main">
         <?php if ($this->controller()->getAction()!='login' && !$this->get('exception')): ?>
             <div class="nav">
             <?php if (true||$this->controller()->isWritable()): ?>
                 <?php if ($this->controller()->session()->getUserId()): ?>
-                    <a href="<?php echo $this->url('logout') ?>" class="f-right" style="margin:0px 10px;">Log Out</a>
+                    <a href="<?php echo $this->url('logout') ?>" class="f-right" style="margin:0px 10px;">Déconnexion</a>
                     <?php if ($returnUrl = $this->controller()->session()->getReturnUrl()): ?>
-                        <a href="<?php echo $returnUrl ?>" class="f-right" style="margin:0px 10px;">Return to Admin</a>
+                        <a href="<?php echo $returnUrl ?>" class="f-right" style="margin:0px 10px;">Retour à l'administration</a>
                     <?php endif; ?>
                 <?php endif; ?>
                 <ul>
                     <li class="first"><a <?php echo $this->getNavLinkParams('connectPackages') ?>>Extensions</a></li>
-                    <li class="last"><a <?php echo $this->getNavLinkParams('settings') ?>>Settings</a></li>
+                    <li class="last"><a <?php echo $this->getNavLinkParams('settings') ?>>Paramètres</a></li>
                 </ul>
              <?php else: ?>
                 <ul>
-                    <li class="first last"><a class="active">Check Write Permissions</a></li>
+                    <li class="first last"><a class="active">Vérifiez les permissions d'écriture</a></li>
                 </ul>
              <?php endif; ?>
             </div>
